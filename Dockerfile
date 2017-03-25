@@ -12,5 +12,5 @@ RUN go install pingpong
 
 EXPOSE 8080
 
-ENTRYPOINT ["/pingpong/bin/pingpong", "-port", "8080"]
-CMD ["-asPong"]
+ENTRYPOINT ["/pingpong/bin/pingpong"]
+CMD ["-port 8080 -asPong"]
